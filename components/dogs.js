@@ -100,12 +100,12 @@ module.exports = router;
 */
 
 //luo uusi data
-Create a new dataF
-    Expects the following data format
+//Create a new dataF
+    /*Expects the following data format
     {
         id: string,
         data: string
-    }
+    }*/
 
     router.post('/', (req, res) => {
 
