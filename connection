@@ -1,0 +1,21 @@
+import http.client
+
+conn = http.client.HTTPConnection("ec2-18-234-220-119,compute-1,amazonaws,com\")
+
+headers = {
+    'User-Agent': "PostmanRuntime/7.20.1",
+    'Accept': "*/*",
+    'Cache-Control': "no-cache",
+    'Postman-Token': "79ff30b4-59ca-4644-8397-381806233dab,d13c6194-70f4-47be-a9c5-6739d573c02d",
+    'Host': "ec2-18-234-220-119.compute-1.amazonaws.com",
+    'Accept-Encoding': "gzip, deflate",
+    'Connection': "keep-alive",
+    'cache-control': "no-cache"
+    }
+
+conn.request("GET", "undefined", headers=headers)
+
+res = conn.getresponse()
+data = res.read()
+
+print(data.decode("utf-8"))
