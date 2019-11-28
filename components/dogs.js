@@ -21,11 +21,11 @@ const router = express.Router();
 }*/
 
 //  Some fixed example data of dogs
-let FallData = {
+/*let FallData = {
     dataF: [{
         id: 1,
-        data: "".}]
-}
+        data: ""}]
+}*/
 
 /*//  Return all dog information
 //router.get('/', (req, res) => { res.json(dogData)});*/
