@@ -29,7 +29,7 @@ app.get('/hello', (req, res) => res.send('Hello GET World!'));
 app.post('/hello', (req, res) => res.send('Hello POST World!'));
 app.put('/hello', (req, res) => res.send('Hello PUT World!'));
 app.delete('/hello', (req, res) => res.send('Hello DELETE World!'));
-
+app.get('\dataF', (req, res) => res.send('kesken'));
 /* Route parameters */
 app.get('/hello/:parameter1/world/:parameter2', (req, res) => {
     res.send('Your route parameters are\n' + JSON.stringify(req.params));
@@ -43,9 +43,9 @@ app.route('/world')
     .delete((req, res) => res.send('delete World'))
 
 /* demonstrate route module/component usage - the dogComponent content is defined in separate file */
-app.use('/dogs', dogComponent);
-
-app.use('/apiKey', apiKeyDemo);
+//app.use('/dogs', dogComponent);
+app.use('/dataf',dataF)
+//app.use('/apiKey', apiKeyDemo);
 
 app.listen(port, () => {
     console.log(`Example API listening on http://localhost:${port}\n`);
